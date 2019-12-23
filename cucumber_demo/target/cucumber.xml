@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.041885">
+    <testcase classname="Cocktail Ordering" name="Creating an empty order" time="0.017743">
+        <failure message="java.lang.AssertionError: expected:&lt;10&gt; but was:&lt;0&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:834)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:645)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:631)&#13;&#10;&#9;at dojo.CocktailSteps.there_is_cocktails_in_the_order(CocktailSteps.java:33)&#13;&#10;&#9;at ✽.there is 10 cocktails in the order(src/test/resources/dojo/cocktail.feature:11)&#13;&#10;">
+            <![CDATA[Given Romeo who wants to buy a drink........................................passed
+When an order is declared for Juliette......................................passed
+Then there is 10 cocktails in the order.....................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<10> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at dojo.CocktailSteps.there_is_cocktails_in_the_order(CocktailSteps.java:33)
+	at ✽.there is 10 cocktails in the order(src/test/resources/dojo/cocktail.feature:11)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Cocktail Ordering" name="Sending a message with an order" time="0.008842">
+        <system-out>
+            <![CDATA[Given Romeo who wants to buy a drink........................................passed
+When an order is declared for Juliette......................................passed
+And a message saying "Wanna chat?" is added.................................passed
+Then the ticket must say "From Romeo to Juliette: Wanna chat?"..............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Cocktail Ordering" name="Sending a message with an order 2" time="0.0153">
+        <system-out>
+            <![CDATA[Given Romeo who wants to buy a drink........................................passed
+When an order is declared for Jerry.........................................passed
+And a message saying "Hei!" is added........................................passed
+Then the ticket must say "From Romeo to Jerry: Hei!"........................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
